@@ -1,7 +1,7 @@
 {
     "tasks": [
         {
-            "type": "cppbuild",
+            "type": "shell",
             "label": "C/C++: g++ build active file",
             "command": "/usr/bin/g++",
             "args": [
@@ -15,7 +15,10 @@
                 "-Wsign-conversion",
                 "-Werror",
                 "-std=c++23",
-                "${file}",
+                {
+                    "value": "${fileDirname}/*.cpp",
+                    "quoting": "escape"
+                },
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],

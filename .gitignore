@@ -1,1 +1,21 @@
+# 1. Ignore all files by default in all directories
+*
 
+# 2. Allow Git to traverse subfolders
+!*/
+
+# 3. Whitelist C++ source files and headers
+!*.cpp
+!*.h
+!*.hpp
+!*.c
+!*.cxx
+
+# 4. Whitelist essential repository configuration and metadata files
+!.gitignore
+!*.md
+!*.txt
+!*.json
+!*.sh
+!Makefile
+!CMakeLists.txt
